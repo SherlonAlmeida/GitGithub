@@ -1,0 +1,34 @@
+1) Faça um Fork do Repositório
+	-O primeiro passo é fazer um fork do repositório original no qual você deseja enviar um Pull Request. Isso irá criar uma cópia do repositório na sua conta GitHub. Para fazer o fork, basta clicar no botão "Fork" no canto superior direito da página do repositório original.
+	
+2) Clone o Repositório
+	-Após o fork, você precisará clonar o repositório para o seu computador. Para fazer isso, acesse o repositório na sua conta GitHub e copie a URL do repositório. Em seguida, abra o terminal ou prompt de comando e digite o seguinte comando:
+	git clone <URL-do-repositório>
+
+3) Crie um Branch para as Alterações
+	-Agora, crie um branch separado para suas alterações. Isso permitirá que você faça suas alterações sem afetar o branch principal do repositório. Para criar um novo branch, digite o seguinte comando no terminal:
+	git checkout -b <nome-do-seu-branch>
+
+4) Faça as Alterações e Realize o Commit
+	-Faça as alterações que deseja enviar no seu Pull Request. Após as alterações, adicione os arquivos alterados ao staging area usando o comando:
+		git add .
+	-Em seguida, faça o commit das suas alterações com uma mensagem clara e descritiva sobre o que foi alterado. O comando para realizar o commit é:
+		git commit -m "Mensagem do Commit"
+
+5) Envie as Alterações para o GitHub
+	-Após o commit, envie suas alterações para o repositório na sua conta GitHub. Para isso, use o comando:
+		git push origin <nome-do-seu-branch>
+
+6) Abra o Pull Request
+	Usando o Github
+		-Agora, acesse o seu repositório no GitHub e clique no botão "New pull request". Selecione o branch que você acabou de criar no seu repositório e o branch para o qual você deseja enviar o Pull Request no repositório original.
+		-Adicione uma descrição clara e detalhada das suas alterações e clique no botão "Create Pull Request".
+	Usando o terminal
+		-Crie o Pull Request com o comando git request-pull.
+			git request-pull origin/meu-novo-branch https://github.com/nome-do-usuario/repo-original.git master
+		-Neste exemplo, origin/meu-novo-branch é o seu branch, https://github.com/nome-do-usuario/repo-original.git é a URL do repositório original e master é o branch principal do repositório original.
+
+7) Revisão e Mesclagem
+	-Agora, os mantenedores do repositório original poderão revisar suas alterações e dar feedback ou solicitar alterações adicionais. Após a aprovação do Pull Request, o mantenedor do repositório original pode mesclar suas alterações no branch principal.
+
+	-Em resumo, enviar um Pull Request é um processo relativamente simples, mas é importante seguir as boas práticas e fornecer uma descrição clara e detalhada das suas alterações. Com esses passos, você estará pronto para contribuir para projetos open source na plataforma GitHub.

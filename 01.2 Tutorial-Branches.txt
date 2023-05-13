@@ -1,0 +1,17 @@
+Criar uma Branch (Derivada da branch atual)
+git checkout -b <nome da nova branch>
+
+Trocar de Branch
+git checkout <nome da branch>
+
+Listar Branches existentes
+git branch
+
+Excluir Branches
+git branch -d <nome da branch>
+
+Mesclar Branches (Adiciona as modificações da branch desejada à atual)
+#Para ativar a branch na qual as modificações serão incorporadas
+	git checkout <nome do branch>
+#Para mesclar a branch desejada com a atual
+	git merge <nome do branch>
